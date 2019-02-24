@@ -156,23 +156,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="../resources/js/my_scripts.js"></script>
-  <script>
-  function loadStatsPage()
-  {
-    var table = document.getElementById("stats_table");//Retrieve our table element
-		var row_counter;//Keeps track of our row index
-		var col_counter;//Keeps track of our column index
-		var cell_value;
-		for(row_counter = 0; row_counter < table.rows.length; row_counter++)
-		{//Outer for loop iterates over each row
-			for(col_counter = 0; col_counter < table.rows[row_counter].cells.length; col_counter++)
-			{
-				cell_value = table.rows[row_counter].cells[col_counter].innerHTML;//Read in a cells current value
-				//cell_value = parseInt(cell_value) + 2;//Increase the cell's value by 2
-				//table.rows[row_counter].cells[col_counter].innerHTML = cell_value;//Update the actual html of the cell
-			}
-		}
-  }
-  </script>
 </body>
 </html>
